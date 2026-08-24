@@ -1,0 +1,106 @@
+<svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="riTitle riDesc">
+  <title id="riTitle">Risk Intelligence — predictive risk monitoring cover artwork</title>
+  <desc id="riDesc">Dark navy illustration with an orange and gold radar sweep over a risk grid, in the Gilapi brand palette.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050c1a"/>
+      <stop offset="55%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0c2340"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="72%" cy="28%" r="60%">
+      <stop offset="0%" stop-color="#F7941D" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#F7941D" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sweep" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FDB623" stop-opacity="0.55"/>
+      <stop offset="80%" stop-color="#FDB623" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#FDB623" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accentBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F7941D"/>
+      <stop offset="100%" stop-color="#FDB623"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect width="1200" height="900" fill="url(#glow)"/>
+
+  <g stroke="#F7941D" stroke-opacity="0.10" stroke-width="1">
+    <line x1="0" y1="150" x2="1200" y2="150"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+    <line x1="0" y1="750" x2="1200" y2="750"/>
+    <line x1="150" y1="0" x2="150" y2="900"/>
+    <line x1="300" y1="0" x2="300" y2="900"/>
+    <line x1="450" y1="0" x2="450" y2="900"/>
+    <line x1="600" y1="0" x2="600" y2="900"/>
+    <line x1="750" y1="0" x2="750" y2="900"/>
+    <line x1="900" y1="0" x2="900" y2="900"/>
+    <line x1="1050" y1="0" x2="1050" y2="900"/>
+  </g>
+
+  <!-- radar / predictive scan, right side signature element -->
+  <g transform="translate(840,440)">
+    <circle r="230" fill="url(#sweep)"/>
+    <circle r="230" fill="none" stroke="#F7941D" stroke-opacity="0.35" stroke-width="1.5"/>
+    <circle r="175" fill="none" stroke="#F7941D" stroke-opacity="0.3" stroke-width="1"/>
+    <circle r="115" fill="none" stroke="#F7941D" stroke-opacity="0.28" stroke-width="1"/>
+    <circle r="55" fill="none" stroke="#FFD23F" stroke-opacity="0.55" stroke-width="1.5"/>
+    <path d="M0 0 L0 -230 A230 230 0 0 1 199 -115 Z" fill="#FDB623" fill-opacity="0.12"/>
+    <line x1="0" y1="0" x2="199" y2="-115" stroke="#FFD23F" stroke-width="2" stroke-opacity="0.85"/>
+
+    <circle cx="70" cy="-140" r="7" fill="#FF6B5E"/>
+    <circle cx="70" cy="-140" r="16" fill="#FF6B5E" fill-opacity="0.18"/>
+    <circle cx="-95" cy="60" r="5" fill="#FDB623"/>
+    <circle cx="-95" cy="60" r="12" fill="#FDB623" fill-opacity="0.2"/>
+    <circle cx="130" cy="90" r="4" fill="#FFD23F"/>
+    <circle cx="-40" cy="-110" r="4" fill="#FFD23F"/>
+    <circle cx="150" cy="-40" r="5" fill="#FDB623"/>
+    <circle cx="10" cy="150" r="4" fill="#FFD23F"/>
+
+    <g stroke="#F7941D" stroke-opacity="0.5" stroke-width="1.2">
+      <line x1="70" y1="-140" x2="-40" y2="-110"/>
+      <line x1="-40" y1="-110" x2="-95" y2="60"/>
+      <line x1="-95" y1="60" x2="10" y2="150"/>
+      <line x1="10" y1="150" x2="130" y2="90"/>
+      <line x1="130" y1="90" x2="150" y2="-40"/>
+      <line x1="150" y1="-40" x2="70" y2="-140"/>
+    </g>
+    <circle r="3" fill="#FFD23F">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- risk gauge, lower-left -->
+  <g transform="translate(230,700)">
+    <path d="M -110 0 A 110 110 0 0 1 110 0" fill="none" stroke="#16264a" stroke-width="14" stroke-linecap="round"/>
+    <path d="M -110 0 A 110 110 0 0 1 40 -102" fill="none" stroke="url(#accentBar)" stroke-width="14" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="55" y2="-92" stroke="#F5F7FB" stroke-width="3" stroke-linecap="round"/>
+    <circle r="7" fill="#F5F7FB"/>
+    <text x="0" y="40" text-anchor="middle" fill="#94a3b8" font-family="'DM Sans', Arial, sans-serif" font-size="15" letter-spacing="2">RISK INDEX</text>
+  </g>
+
+  <!-- bar cluster -->
+  <g transform="translate(430,760)">
+    <rect x="0" y="-40" width="16" height="40" fill="#F7941D" opacity="0.85"/>
+    <rect x="24" y="-70" width="16" height="70" fill="#FDB623" opacity="0.9"/>
+    <rect x="48" y="-25" width="16" height="25" fill="#F7941D" opacity="0.6"/>
+    <rect x="72" y="-95" width="16" height="95" fill="#FFD23F" opacity="0.9"/>
+    <rect x="96" y="-55" width="16" height="55" fill="#F7941D" opacity="0.7"/>
+  </g>
+
+  <g font-family="'Outfit', Arial, sans-serif" fill="#ffffff">
+    <text x="90" y="120" font-size="20" letter-spacing="5" fill="#FFD23F" font-family="'DM Sans', Arial, sans-serif">PREDICTIVE RISK &amp; TREATMENT TRACKING</text>
+    <text x="88" y="205" font-size="70" font-weight="900">Risk</text>
+    <text x="88" y="280" font-size="70" font-weight="900">Intelligence</text>
+  </g>
+  <g font-family="'DM Sans', Arial, sans-serif" fill="#94a3b8">
+    <text x="90" y="325" font-size="18">Exposure scoring · treatment tracking · milestone impact</text>
+  </g>
+
+  <g transform="translate(90,600)" opacity="0.9">
+    <path d="M40 0 L78 16 L78 55 C78 92 58 118 40 128 C22 118 2 92 2 55 L2 16 Z" fill="none" stroke="#F7941D" stroke-width="2.5" stroke-opacity="0.55"/>
+    <path d="M22 62 L36 78 L60 42" fill="none" stroke="#FFD23F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
